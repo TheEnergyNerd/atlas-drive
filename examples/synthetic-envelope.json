@@ -1,0 +1,64 @@
+{
+  "schema": "atlas-drive-envelope-v1",
+  "name": "synthetic-example",
+  "speed_rad_s": [
+    -20.0,
+    -10.0,
+    0.0,
+    10.0,
+    20.0
+  ],
+  "temperature_C": [
+    25.0,
+    80.0,
+    110.0
+  ],
+  "lower_torque_Nm": [
+    [
+      -5,
+      -20,
+      -30,
+      -30,
+      -20
+    ],
+    [
+      -3,
+      -12,
+      -18,
+      -18,
+      -12
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "upper_torque_Nm": [
+    [
+      20,
+      30,
+      30,
+      20,
+      5
+    ],
+    [
+      12,
+      18,
+      18,
+      12,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "response_time_s": 0.01,
+  "description": "Entirely synthetic illustration; no measured Atlas motor data or manufacturing parameters."
+}

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atlas-drive-runtime"
+version = "0.1.0"
+description = "Portable actuator envelope models and an Isaac Lab adapter"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3"]
+license = {text = "MIT"}
+readme = "README.md"
+authors = [{name = "Atlas Motion Systems"}]
+
+[project.optional-dependencies]
+torch = ["torch>=2.2"]
+test = ["pytest>=8"]
+
+[project.scripts]
+atlas-drive = "atlas_drive_runtime.cli:main"
+
+[project.urls]
+Homepage = "https://atlasmotion.com/"
+Repository = "https://github.com/TheEnergyNerd/atlas-drive"
+
+[tool.setuptools.packages.find]
+where = ["src"]
