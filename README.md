@@ -1,15 +1,17 @@
+> This repository has moved to [pranavatlas/atlas-drive](https://github.com/pranavatlas/atlas-drive). Use that repository for current code and issues.
+
 # Atlas Drive
 
 **Design the motor and motion together.**
 
 Atlas designs and manufactures motors and actuators. This repository is the open-source runtime for using actuator envelopes in robot simulation: a portable model format, NumPy and PyTorch evaluators, and an experimental Isaac Lab adapter.
 
-[Research and interactive examples](https://theenergynerd.github.io/actuator-model-problem/) · [Have Atlas design and manufacture your actuator](https://atlasmotion.com/contact)
+[Research and interactive examples](https://pranavatlas.github.io/atlas-drive-research/) · [Have Atlas design and manufacture your actuator](https://atlasmotion.com/contact)
 
 ## Start locally
 
 ```sh
-git clone https://github.com/TheEnergyNerd/atlas-drive.git
+git clone https://github.com/pranavatlas/atlas-drive.git
 cd atlas-drive
 python -m pip install .
 atlas-drive examples/synthetic-envelope.json --torque 25 --speed 10 --temperature 25
